@@ -1,0 +1,157 @@
+/* Regular Roboto */
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("assets/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("assets/fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Thin Roboto */
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("assets/fonts/roboto-thin-webfont.woff2") format("woff2"),
+    url("assets/fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* playfair */
+@font-face {
+  font-family: "Playfair";
+  src:
+    url("assets/fonts/playfairdisplay-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("assets/fonts/playfairdisplay-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family:
+    "Roboto",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+h1 {
+  font-family: "Playfair";
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-color: rgb(102, 168, 199);
+  transform: skewY(-30deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: rgb(77, 77, 77);
+}
+
+.header-content h1 {
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.content-image {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.content-image img {
+  width: 100%;
+  box-shadow: 0px 0px 12px 0px rgba(80, 80, 80, 0.589);
+}
+
+.content-image p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0rem 0.5rem;
+  text-align: start;
+  font-family: "Playfair";
+  font-size: 4.6rem;
+  line-height: 5.5rem;
+  color: white;
+}
+
+.header-icons {
+  display: flex;
+}
+header svg {
+  width: 2.2rem;
+  padding: 0.8rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  background-color: rgb(102, 168, 199);
+  padding: 2.4rem 1.6rem 4rem 1.6rem;
+}
+
+.footer-text {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.footer-text h1 {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 2.8rem;
+}
+
+.address {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  margin-bottom: 1rem;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+}
+footer svg {
+  width: 2.8rem;
+  padding: 0.8rem;
+}
+
+footer img {
+  width: 100%;
+  object-fit: cover;
+}
